@@ -19,6 +19,11 @@ internal class DragonBallAPIDispatcher: Dispatcher() {
                     .setResponseCode(HttpURLConnection.HTTP_OK)
                     .setBody(getJson("json/heros.json"))
             }
+            "/api/heros/locations" -> {
+                MockResponse()
+                    .setResponseCode(HttpURLConnection.HTTP_OK)
+                    .setBody(getJson("json/locations.json"))
+            }
             else -> MockResponse().throttleBody(1024,5, TimeUnit.SECONDS)
         }
     }

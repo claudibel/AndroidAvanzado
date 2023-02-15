@@ -43,8 +43,6 @@ class DetailFragment : Fragment(), OnMapReadyCallback {
 
         _binding = FragmentDetailBinding.inflate(inflater, container, false)
         return binding.root
-
-
     }
 
     @SuppressLint("SetTextI18n", "ResourceAsColor")

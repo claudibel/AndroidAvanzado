@@ -33,7 +33,6 @@ class FavoriteSuperHeroViewModel @Inject constructor(private val repository: Rep
                 repository.getFavoritesList()
             }
             _favorites.value = superheros
-            Log.d(TAG, superheros.toString())
         }
     }
 
